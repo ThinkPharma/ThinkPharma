@@ -392,3 +392,264 @@ footer {
         padding: 25px 15px;
     }
 }
+/* ============================================
+   PAGE HEADER (Semester/Subject Pages)
+   ============================================ */
+.page-header {
+    background: var(--bg-gradient);
+    color: var(--white);
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    transition: var(--transition);
+}
+
+.back-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateX(-5px);
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.page-header h1 i {
+    margin-right: 10px;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* ============================================
+   SUBJECTS SECTION
+   ============================================ */
+.subjects-section {
+    padding: 60px 5%;
+    background: var(--white);
+}
+
+.subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ============================================
+   SUBJECT CARD
+   ============================================ */
+.subject-card {
+    background: var(--bg-light);
+    border-radius: var(--border-radius);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+    transition: var(--transition);
+    border: 2px solid transparent;
+    box-shadow: var(--shadow);
+}
+
+.subject-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-hover);
+}
+
+.subject-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--bg-gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subject-icon i {
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+.subject-info {
+    flex: 1;
+}
+
+.subject-code {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.subject-info h3 {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+}
+
+.subject-info p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.subject-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.subject-status.available {
+    background: #d4edda;
+    color: #155724;
+}
+
+.subject-status.coming-soon {
+    background: #fff3cd;
+    color: #856404;
+}
+
+/* ============================================
+   QUICK INFO SECTION
+   ============================================ */
+.quick-info {
+    padding: 60px 5%;
+    background: var(--bg-light);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.info-card {
+    background: var(--white);
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.info-card i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.info-card h3 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+}
+
+.info-card p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* ============================================
+   OTHER SEMESTERS NAVIGATION
+   ============================================ */
+.other-semesters {
+    padding: 60px 5%;
+    background: var(--white);
+    text-align: center;
+}
+
+.semester-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sem-btn {
+    padding: 12px 25px;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    border-radius: 25px;
+    font-weight: 500;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.sem-btn:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.sem-btn.active {
+    background: var(--primary-color);
+    color: var(--white);
+    border-color: var(--secondary-color);
+}
+
+/* ============================================
+   RESPONSIVE - SEMESTER PAGE
+   ============================================ */
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .subjects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .subject-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header {
+        padding: 30px 15px;
+    }
+    
+    .page-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .semester-nav {
+        gap: 10px;
+    }
+    
+    .sem-btn {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+}
