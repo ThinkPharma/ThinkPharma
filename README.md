@@ -8,4 +8,4 @@ Here are some ideas to get you started:
 - 🔭 I’m currently working on think pharma website 
 - 🌱 I’m currently learning web development 
 - 👯 I’m looking to collaborate on pharma website's
-- 🌐 ThinkPharma.githhub.io
+- 🌐 [ThinkPharma](http://www.thinkpharma.githhub.io/)
